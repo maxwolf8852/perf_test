@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
 
 requirements = []
 setuptools.setup(
-    name="perf_test",
-    version="0.0.1",
+    name="pyperf-test",
+    version="0.0.4",
     author="Maxim Volkovskiy",
     author_email="maxwolf8852@gmail.com",
     description="test python speed",

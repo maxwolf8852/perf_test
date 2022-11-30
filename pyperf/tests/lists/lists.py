@@ -1,4 +1,4 @@
-from base import profile, start
+from pyperf.base import profile
 
 
 def f(x):
@@ -31,12 +31,8 @@ def list_func4():
     k = [x*x+1 for x in xs]
     return k
 
-
 @profile()
 def list_func5():
     xs = [i for i in range(0, 100_000)]
     k = list(map(lambda x: x*x+1, xs))
     return k
-
-if __name__ == '__main__':
-    start(__file__, __name__, locals())
